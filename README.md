@@ -3,35 +3,13 @@
 #### 介绍
 正点原子I.MX6U Qt综合例程源码
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1、Windows下编译，安装Qt 5.12.9，可以在Windows编译，打开工程，编译完成后把src文件夹放到可执行程序exe同级目录下。
+2、Ubuntu Linux下编译，安装Qt 5.12.9，可以在Linux Ubuntu 编译，打开工程，编译完成后把src文件夹放到可执行程序同级目录下。
+3、ARM下编译，在Ubuntu下安装交叉编译器，详细请看【正点原子】I.MX6U用户快速体验V1.x.pdf文档的第4.6小节。或者看【正点原子】I.MX6U Qt交叉编译环境搭建V1.x.pdf文档。编译完成后把src文件夹放到可执行程序同级目录下
 
-#### 参与贡献
+重要提示：不能在winodws/linux下将工程放在中文路径下编译与运行！
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+备注：1.Windows下使用此Demo时，播放音乐需要安装此目录下的LAVFilters-0.68.1.exe（解码用的软件）。
+      2.Ubuntu 16.04下使用此Demo时，播放音乐需要安装Gst解码。需要在终端输入sudo apt-get install gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-pulseaudio安装GST解码库。
