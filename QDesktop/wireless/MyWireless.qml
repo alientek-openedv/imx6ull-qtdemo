@@ -34,8 +34,9 @@ Item {
         appVersion: "Version 1.0.0"
         subtoolText: "1.此软件为无线联网软件，使用前请插上正点原子店铺在售的Linux专用的USB WIFI（ALPHA开发板有赠送，软件默认支持的是USB WIFI，使用SDIO WIFI请自行修改软件），\
 点击无线的名称，弹出输入框后，若热点有密码请输入8位以上的无线密码，再点击连接。若热点无密码，则直接点击连接即可。
-2.连接成功则会显示连接“已连接”，未连上则会显示密码错误/已断开，在软件运行的过程如果连接好4次以上连接不成功，则程序不会再去连接！程序仅供参考与学习！"
-        versionText: "1.【Version 1.0.0 2020-10-06】。\n初始版本"
+2.连接成功则会显示连接“已连接”，未连上则会显示密码错误/已断开，在软件运行的过程如果连接好4次以上连接不成功，则程序不会再去连接！程序仅供参考与学习！
+3.由于可能程序问题或者物理外界因素不可抗拒，若连接不上，请参考正点原子快速体验文档测试USB WIFI即可。"
+        versionText: "1.【Version 1.0.0 2020-10-06】。\n初始版本\n2.【Version 1.0.1 2021-03-25】。\n添加连接不上的说明。"
     }
 
     onVisibleChanged: {
@@ -219,7 +220,7 @@ Item {
             anchors.left: wlanText.left
             verticalAlignment: Text.AlignVCenter
             font.pointSize: 15
-            text: qsTr("选取附近的WLAN")
+            text: qsTr("附近WLAN(此软件仅供参考，详细点击右上角“关于”)")
             color: "#27d7f0"
         }
 

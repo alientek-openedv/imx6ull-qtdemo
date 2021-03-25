@@ -18,7 +18,8 @@ Item {
         appName: "设置"
         appVersion: "Version 1.0.1"
         subtoolText: "1.此软件是设置媒体音量（扬声器的音量），及点击关机、重启和退出整个App桌面，注意6U使用关机指令需要长按4G模块接口旁边的ON_OFF按钮才重启。"
-        versionText: "1.【Version 1.0.0 2020-10-06】。\n初始版本\n2.【Version 1.0.1 2021-01-07】。\n修复开机耳机没有声音，及音量条70%以下喇叭就没有声音的问题"
+        versionText: "1.【Version 1.0.0 2020-10-06】。\n初始版本\n2.【Version 1.0.1 2021-01-07】。\n修复开机耳机没有声音，及音量条70%以下喇叭就没有声音的问题\
+\n3.【Version 1.0.2 2021-03-25】。\n删除关机功能，避免用户关机，没法启动"
     }
     onVisibleChanged: {
         formState.state == 'right' ? formState.state = '' : formState.state = 'right'
@@ -203,7 +204,7 @@ Item {
             function getItemName(index, id) {
                 var data = [
                             ["退出桌面"],
-                            ["关机"],
+                            ["关机(已禁用)"],
                             ["重启"],
                         ]
                 return data[index][0];
@@ -212,7 +213,7 @@ Item {
             function getNature(index, id) {
                 var data = [
                             ["您将退出桌面程序"],
-                            ["您的系统将会关机"],
+                            ["请您直接关闭电源"],
                             ["您的系统将会重启"],
                         ]
                 return data[index][0];

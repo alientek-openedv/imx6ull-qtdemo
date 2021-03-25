@@ -20,7 +20,8 @@ Item {
         appName: "系统信息"
         appVersion: "Version 1.0.1"
         subtoolText: "1.此软件为系统信息展示软件。显示系统的信息。"
-        versionText: "1.【Version 1.0.0 2020-10-06】。\n初始版本\n2.【Version 1.0.1 2021-01-07】。\n修复一些问题，如开机耳机没有声音"
+        versionText: "1.【Version 1.0.0 2020-10-06】。\n初始版本\n2.【Version 1.0.1 2021-01-07】。\n修复一些问题，如开机耳机没有声音
+3.【Version 1.0.2 2021-03-25】。\n添加WIFI连上不上的说明，删除关机的功能"
     }
 
     onVisibleChanged: {
@@ -72,7 +73,7 @@ Item {
 
         Text {
             id: version
-            text: qsTr("QUI 1.0.1 | Stable version")
+            text: qsTr("QUI 1.0.2 | Stable version")
             color: "#ccffffff"
             font.pixelSize: 15
             anchors.left: qui.right

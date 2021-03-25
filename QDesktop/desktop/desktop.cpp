@@ -38,8 +38,8 @@ void MyDesktop::systemReboot()
 
 void MyDesktop::systemPoweroff()
 {
-    system("poweroff");
-    system("kill -9 $(pidof QDesktop)");
+//    system("poweroff");
+//    system("kill -9 $(pidof QDesktop)");
 }
 
 QString MyDesktop::sysVolume()
@@ -123,8 +123,8 @@ void MyDesktop::getCpuTemp()
 
 bool MyDesktop::getCoreBoardInfo()
 {
-    QDir dir("/run/media/mmcblk1p1");
-    if (dir.exists())
+    QFile file("/dev/mtd0");
+    if (!file.exists())
         return true;
     else
         return false;
