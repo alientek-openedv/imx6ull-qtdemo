@@ -294,7 +294,7 @@ Item {
                                 break;
                             case 1:
                                 poweroffFlag = true
-                                Qt.quit()
+                                //Qt.quit()
                                 break;
                             case 2:
                                 rebootFlag = true
